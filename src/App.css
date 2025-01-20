@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.app-container-light {
+  background-color: #fbfbfb;
+  height: 100vh;
+}
+
+.app-container-dark {
+  background-color: #232d3f;
+  padding-bottom: 10px;
+}
