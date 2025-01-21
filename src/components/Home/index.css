@@ -62,7 +62,7 @@
   border: 1px solid #444;
 }
 
-/* Pagination */
+
 .pagination-light,
 .pagination-dark {
   display: flex;
@@ -71,7 +71,7 @@
   align-items: center;
 }
 
-/* Button Styles */
+
 .button-light,
 .button-dark {
   padding: 10px 20px;
@@ -122,7 +122,7 @@
   border-color: #ddd;
 }
 
-/* Span Styles */
+
 .span-light {
   font-size: 16px;
   margin: 0 10px;
@@ -149,14 +149,22 @@ span span {
 
   .search-bar-light,
   .search-bar-dark {
-    width: 80%;
+    width: 40%;
     margin-left: 0;
     margin-right: 0;
   }
+  .controls-light,
+.controls-dark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
   .sort-select-light,
   .sort-select-dark {
-    width: 100%;
+    width: 60%;
     margin-right: 0;
     margin-top: 10px;
   }
@@ -164,6 +172,7 @@ span span {
   .pagination-light,
   .pagination-dark {
     flex-direction: row;
+  
   }
 
   .button-light,
@@ -182,16 +191,20 @@ span span {
 @media (max-width: 480px) {
   .search-bar-light,
   .search-bar-dark {
-    width: 90%;
+    width: 40%;
     padding: 10px 15px;
   }
 
   .sort-select-light,
   .sort-select-dark {
-    width: 100%;
+    width: 60%;
     padding: 8px 15px;
   }
-
+  .pagination-light,
+  .pagination-dark {
+    flex-direction: row;
+   
+  }
   .button-light,
   .button-dark {
     padding: 10px 15px;
@@ -202,4 +215,12 @@ span span {
   .span-dark {
     font-size: 14px;
   }
+  .controls-light,
+  .controls-dark {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }

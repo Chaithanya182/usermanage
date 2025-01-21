@@ -150,7 +150,28 @@
   .user-detail-container-light,
   .user-detail-container-dark {
     padding: 15px;
+    width: 80%;
   }
+  .user-detail-container-light,
+.user-detail-container-dark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 80%;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-detail-container-light {
+  background-color: #f7f7f7;
+}
+
+.user-detail-container-dark {
+  background-color: #333;
+  color: #fff;
+}
 
   .user-detail-heading-light,
   .user-detail-heading-dark {
@@ -159,6 +180,7 @@
 
   .user-info-card {
     padding: 15px;
+    width: 80%;
     margin: 10px 0;
   }
 

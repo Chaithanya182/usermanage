@@ -124,6 +124,7 @@
   .user-detail-light,
   .user-detail-dark {
     padding: 15px;
+    max-width: 80%;
   }
 
   .user-header h1 {
@@ -144,7 +145,7 @@
   }
 
   .info-card {
-    max-width: 90%;
+    max-width: 80%;
   }
 }
 
@@ -152,6 +153,7 @@
   .user-detail-light,
   .user-detail-dark {
     padding: 10px;
+    max-width:80%;
   }
 
   .user-header h1 {
@@ -171,7 +173,7 @@
   }
 
   .info-card {
-    max-width: 100%;
+    max-width: 80%;
     padding: 10px;
   }
 }

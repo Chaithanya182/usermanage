@@ -17,7 +17,7 @@ class UserDetail extends Component {
   }
 
   getUserDetails = async () => {
-    // Get id directly from props.params
+    
     const id = this.props.params.id
 
     try {
