@@ -1,124 +1,177 @@
 .link-item {
-    text-decoration: none;
-  }
-  
-  .user-detail-light {
-    background-color: #c4d9ff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    width: 100%;
-    max-width: 1000px;
-    margin: 20px auto;
-  }
-  
-  .user-detail-dark {
-    background-color: #c4d9ff;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    width: 100%;
-    max-width: 1000px;
-    margin: 20px auto;
-  }
-  
-  .user-header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .user-header h1 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .user-header .user-username {
-    font-size: 18px;
-    color: #666;
-  }
-  
-  .user-info-grid {
-    display: flex;
-  }
-  
+  text-decoration: none;
+}
+
+.user-detail-light,
+.user-detail-dark {
+  background-color: #c4d9ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+.user-detail-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.user-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.user-header .user-username {
+  font-size: 18px;
+  color: #666;
+}
+
+.user-info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user-info-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+.info-card {
+  background-color: #fff;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.info-card h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+.info-card strong {
+  font-weight: bold;
+}
+
+.website-link {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+.website-link:hover {
+  text-decoration: underline;
+}
+
+.user-detail-dark .user-header h1,
+.user-detail-dark .user-header .user-username {
+  color: #fff;
+}
+
+.user-detail-dark .info-card {
+  background-color: #444;
+  color: #fff;
+}
+
+.user-detail-dark .info-card strong {
+  color: #ffdd57;
+}
+
+.user-detail-dark .website-link {
+  color: #ffdd57;
+}
+
+.user-detail-dark .website-link:hover {
+  color: #ffbb33;
+}
+
+@media (max-width: 1200px) {
   .user-info-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    gap: 20px;
+    justify-content: space-evenly;
   }
-  
+
   .info-card {
-    background-color: #fff;
-    margin: 10px;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 300px;
-    flex: 1;
-    min-width: 250px;
+    max-width: 45%;
   }
-  
-  .info-card h2 {
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .info-card p {
-    font-size: 16px;
-    color: #555;
-  }
-  
-  .info-card strong {
-    font-weight: bold;
-  }
-  
-  .website-link {
-    color: #0077b6;
-    text-decoration: none;
-  }
-  
-  .website-link:hover {
-    text-decoration: underline;
-  }
-  
+}
+
+@media (max-width: 768px) {
+  .user-detail-light,
   .user-detail-dark {
-    background-color: #333;
-    color: #fff;
+    padding: 15px;
   }
-  
-  .user-detail-dark .user-header h1,
-  .user-detail-dark .user-header .user-username {
-    color: #fff;
+
+  .user-header h1 {
+    font-size: 22px;
   }
-  
-  .user-detail-dark .info-card {
-    background-color: #444;
-    color: #fff;
+
+  .user-header .user-username {
+    font-size: 16px;
   }
-  
-  .user-detail-dark .info-card strong {
-    color: #ffdd57;
+
+  .user-info-grid {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .user-detail-dark .website-link {
-    color: #ffdd57;
+
+  .user-info-cards {
+    justify-content: center;
   }
-  
-  .user-detail-dark .website-link:hover {
-    color: #ffbb33;
+
+  .info-card {
+    max-width: 90%;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .user-detail-light,
+  .user-detail-dark {
+    padding: 10px;
+  }
+
+  .user-header h1 {
+    font-size: 20px;
+  }
+
+  .user-header .user-username {
+    font-size: 14px;
+  }
+
+  .info-card h2 {
+    font-size: 18px;
+  }
+
+  .info-card p {
+    font-size: 14px;
+  }
+
+  .info-card {
+    max-width: 100%;
+    padding: 10px;
+  }
+}

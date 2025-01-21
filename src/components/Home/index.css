@@ -1,4 +1,3 @@
-/* General Home Containers */
 .home-container-light,
 .home-container-dark {
   margin-top: 20px;
@@ -141,7 +140,6 @@ span span {
   color: #79b;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .controls-light,
   .controls-dark {
@@ -165,7 +163,7 @@ span span {
 
   .pagination-light,
   .pagination-dark {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .button-light,
